@@ -3,8 +3,7 @@
 .header-container{    
     height: 70px;
     width: 100%;
-    padding: 1.2rem 0;  
-    
+    padding: 1.2rem 0;     
 
     nav ul{        
         
@@ -13,22 +12,51 @@
         align-items: center;
 
         .navbar-list{
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             font-weight: 500;
             color: #000;
             cursor: pointer;
+            position: relative;
+           
 
             .arrow{
                 margin-left: 10px;
             }
-        
+
+            .services-list{
+                display: flex;
+                flex-direction: column;
+                align-items: center;                
+                text-align: center;
+                width: 100%;                
+                position: absolute;
+                top: 30px;
+                left: 0;                
+
+                li{
+                    width: 100%;                   
+                    font-size: 1.2rem;
+                    padding: 1rem 0;
+                    border-bottom: 1px solid #333;
+                    background-color: #FFF;                    
+
+                    &:hover{
+                        background-color: #F0E7E1;
+                        border-radius: 5px;
+                    }
+                }            
+            }        
         }
         .logo{
-            font-size: 3.2rem;
+            font-size: 3.4rem;
             font-family: 'Prata', serif;
-            color: #000;                    
-            
+            color: #000;           
         }
+
+        li{
+            padding: .5rem 1rem;           
+            
+        }        
         
     }
 }
