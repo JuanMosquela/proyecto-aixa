@@ -15,13 +15,18 @@
         .navbar-list{
             font-size: 1.6rem;
             font-weight: 500;
-            color: #000
+            color: #000;
+            cursor: pointer;
+
+            .arrow{
+                margin-left: 10px;
+            }
+        
         }
         .logo{
             font-size: 3.2rem;
             font-family: 'Prata', serif;
-            color: #000;
-                     
+            color: #000;                    
             
         }
         
