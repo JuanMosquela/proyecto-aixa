@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+.header-container{    
+    height: 70px;
+    width: 100%;
+    padding: 1.2rem 0;  
+    
+
+    nav ul{        
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .navbar-list{
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #000
+        }
+        .logo{
+            font-size: 3.2rem;
+            font-family: 'Prata', serif;
+            color: #000;
+                     
+            
+        }
+        
+    }
+}
