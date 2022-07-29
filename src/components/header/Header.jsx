@@ -1,8 +1,7 @@
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import './header.scss'
 import {MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp} from 'react-icons/md'
 import { useState } from "react"
-import Services from "../../pages/servicios/Services"
 
 const services = [  
   'Content creator',
@@ -11,46 +10,48 @@ const services = [
   'Film maker'
 ]
 
-const Header = () => { 
-  
+const Header = () => {
+
   const navigate = useNavigate()
+  
 
   const [menu, setMenu] = useState(false) 
 
- 
+  
 
-  document.addEventListener('click', function(event) {
-    if(!event.target.matches('.navbar_list') && !event.target.matches('.arrow')){
-      setMenu(false)
-    }
-  });
+  const handleClick =  (li) =>{   
+
+    navigate(`/services/${li}`)
+    
+  } 
+
   
 
   return (
     <header className="header-container">
         <nav>
-            <ul>                
-                  <li 
-                    className="navbar-list"
-                    >
+            <ul>
+                
+                <Link to='/services'>
+                <li 
+                    className="navbar-list"                                    
+                    onMouseEnter={() => setMenu(true)}
+                    onMouseLeave={() => setMenu(false)}>
                     Servicios 
                     {menu ? 
                       <MdOutlineKeyboardArrowUp 
                       className="arrow" 
                     /> : 
-                      <MdOutlineKeyboardArrowDown
-                      onClick={() => setMenu(true)} 
+                      <MdOutlineKeyboardArrowDown 
                       className="arrow" />}
                     {
                       menu && (
                         <ul className="services-list">
                           {
                             services.map(li => (
-                              <li key={li}>
-                                <Link key={li} to={`/services/${li}`}>
-                                  {li}
-                                </Link>
-                              </li>
+                              
+                              <li onClick={() => handleClick(li)}>{li}</li>
+                              
                             ))
                           }
                           
@@ -58,6 +59,7 @@ const Header = () => {
                       )
                     }
                   </li>
+                </Link>
                 
                 <Link to='/'><li className="logo">Aixa Franzoni</li></Link>
                 <Link to='/contact'><li className="navbar-list">Contacto</li></Link>
