@@ -18,10 +18,18 @@ footer{
         gap: 2rem;
 
         li {
-            font-size: 2rem;
+            font-size: 2.2rem;
+            
 
             a{
                 color: var(--footer-icons);
+                cursor: pointer;
+                
+                
+            }
+
+            &:hover{
+                transform: scale(1.2);
             }
         }
     }

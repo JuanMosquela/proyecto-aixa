@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import './header.scss'
 import {MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp} from 'react-icons/md'
 import { useState } from "react"
+import Services from "../../pages/servicios/Services"
 
 const services = [  
   'Content creator',
@@ -10,9 +11,13 @@ const services = [
   'Film maker'
 ]
 
-const Header = () => {  
+const Header = () => { 
+  
+  const navigate = useNavigate()
 
   const [menu, setMenu] = useState(false) 
+
+ 
 
   document.addEventListener('click', function(event) {
     if(!event.target.matches('.navbar_list') && !event.target.matches('.arrow')){
@@ -27,13 +32,14 @@ const Header = () => {
             <ul>                
                   <li 
                     className="navbar-list"
-                    onClick={() => setMenu(true)}>
+                    >
                     Servicios 
                     {menu ? 
                       <MdOutlineKeyboardArrowUp 
                       className="arrow" 
                     /> : 
-                      <MdOutlineKeyboardArrowDown 
+                      <MdOutlineKeyboardArrowDown
+                      onClick={() => setMenu(true)} 
                       className="arrow" />}
                     {
                       menu && (

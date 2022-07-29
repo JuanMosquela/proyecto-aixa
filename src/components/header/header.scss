@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 .header-container{    
-    height: 70px;
+    height: 80px;
     width: 100%;
     padding: 1.2rem 0;     
 
@@ -16,8 +16,7 @@
             font-weight: 500;
             color: #000;
             cursor: pointer;
-            position: relative;
-           
+            position: relative;           
 
             .arrow{
                 margin-left: 10px;
@@ -31,31 +30,14 @@
                 width: 100%;                
                 position: absolute;
                 top: 30px;
-                left: 0;  
-                             
+                left: 0;                              
 
                 li{
                     width: 100%;                   
                     font-size: 1.4rem;
                     padding: 1rem 0;                    
                     background-color: #FFF;
-                    position: relative;
-                    
-
-                    &::before{
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        background-color: var(--footer-icons);
-                        height: 1px;                        
-                        left: 15%;
-                        width: 75%;
-                        
-                                               
-                        
-                        
-                    }
-                    
+                    border-bottom: 1px solid var(--footer-icons);                                   
                     
                     *{
                         color: #000;
