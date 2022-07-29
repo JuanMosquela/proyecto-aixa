@@ -31,17 +31,38 @@
                 width: 100%;                
                 position: absolute;
                 top: 30px;
-                left: 0;                
+                left: 0;  
+                             
 
                 li{
                     width: 100%;                   
-                    font-size: 1.2rem;
-                    padding: 1rem 0;
-                    border-bottom: 1px solid #333;
-                    background-color: #FFF;                    
+                    font-size: 1.4rem;
+                    padding: 1rem 0;                    
+                    background-color: #FFF;
+                    position: relative;
+                    
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        background-color: var(--footer-icons);
+                        height: 1px;                        
+                        left: 15%;
+                        width: 75%;
+                        
+                                               
+                        
+                        
+                    }
+                    
+                    
+                    *{
+                        color: #000;
+                    }
 
                     &:hover{
-                        background-color: #F0E7E1;
+                        background-color: var(--background-pink);
                         border-radius: 5px;
                     }
                 }            

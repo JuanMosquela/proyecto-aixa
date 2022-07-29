@@ -1,12 +1,14 @@
 import '../../App.scss'
-import Hero from '../../hero/Hero'
+import About from '../../components/about/About'
+import Hero from '../../components/hero/Hero'
 
 
 
 const Home = () => {
   return (
     <>
-      <Hero />      
+      <Hero />  
+      <About />    
     
     </>
   )
