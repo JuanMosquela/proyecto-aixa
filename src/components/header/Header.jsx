@@ -1,36 +1,33 @@
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { Link, useNavigate} from "react-router-dom"
 import './header.scss'
 import {MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp} from 'react-icons/md'
 import { useState } from "react"
 
-const services = [  
-  'Content creator',
-  'Product manager',
-  'Fotografa',
-  'Film maker'
-]
 
-const Header = () => {
 
-  const navigate = useNavigate()
-  
+const Header = () => { 
+
+  const navigate = useNavigate()  
 
   const [menu, setMenu] = useState(false) 
 
-  
-
-  const handleClick =  (li) =>{   
-
+  const handleClick = (li) => {
+    console.log(li)    
     navigate(`/services/${li}`)
-    
-  } 
+  }
 
+  const services = [  
+    'Content creator',
+    'Product manager',
+    'Fotografa',
+    'Film maker'
+  ]
   
 
   return (
     <header className="header-container">
         <nav>
-            <ul>
+            <ul>                
                 
                 <Link to='/services'>
                 <li 
@@ -48,9 +45,9 @@ const Header = () => {
                       menu && (
                         <ul className="services-list">
                           {
-                            services.map(li => (
+                            services.map(li => (                              
                               
-                              <li onClick={() => handleClick(li)}>{li}</li>
+                              <li key={li} onClick={() => handleClick(li)}>{li}</li>                              
                               
                             ))
                           }
@@ -60,6 +57,7 @@ const Header = () => {
                     }
                   </li>
                 </Link>
+                
                 
                 <Link to='/'><li className="logo">Aixa Franzoni</li></Link>
                 <Link to='/contact'><li className="navbar-list">Contacto</li></Link>

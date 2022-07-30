@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 .header-container{    
-    height: 70px;
-    width: 100%;
-    padding: 1.2rem 0;     
+    height: 50px;
+    width: 100%;     
 
-    nav ul{        
+    nav{        
+        height: 100%; 
+         
+              
+        ul{       
         
         display: flex;
         justify-content: space-around;
@@ -30,7 +33,7 @@
                 text-align: center;
                 width: 100%;                
                 position: absolute;
-                top: 30px;
+                top: 35px;
                 left: 0; 
                 z-index: 1000; 
                 
@@ -68,5 +71,5 @@
             
         }        
         
-    }
+    }}
 }
