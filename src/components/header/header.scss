@@ -2,7 +2,10 @@
 
 .header-container{    
     height: 50px;
-    width: 100%;     
+    width: 100%; 
+    
+    background-color: #FFF;
+    z-index: 1000;    
 
     nav{        
         height: 100%; 

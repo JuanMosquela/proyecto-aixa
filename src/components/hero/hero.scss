@@ -5,7 +5,8 @@
 .grid-container{    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(260px, 320px) 220px;  
+    grid-template-rows: minmax(260px, 320px) 220px; 
+    padding-top: 1rem;
     
 
     .content{

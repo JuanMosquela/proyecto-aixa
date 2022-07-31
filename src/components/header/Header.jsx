@@ -13,7 +13,7 @@ const Header = () => {
 
   const handleClick = (li) => {
     console.log(li)    
-    navigate(`/services/${li}`)
+    navigate(`services/${li}`)
   }
 
   const services = [  

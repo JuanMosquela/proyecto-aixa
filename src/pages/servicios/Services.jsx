@@ -16,7 +16,7 @@ const Services = () => {
       {servicesData.map(el => (
         <div key={el.category} className="service-container">
           <figure>
-            <img src={el.picture_URL} alt={el.title} />
+            <img src={el.picture_URL[0]} alt={el.title} />
           </figure>
           <div className="service-content">
             <h3>{el.title}</h3>
