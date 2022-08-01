@@ -3,6 +3,11 @@
     height: 90vh;
     width: 100%;
     margin-bottom: 1rem;
+
+    @media(max-width:500px){
+        height: 50vh;    
+        
+    }
     
     
 
@@ -19,17 +24,19 @@
     }
 
     .service-content{
-        position: absolute;
         
+        
+        position: absolute;        
         top: 30%;
         left: 5%;
 
         @media(max-width:500px){
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            inset: 0;
+            left: 35%;
+            margin-right: 300px;
+            text-align: center;
+            
+            
+            
         }
         
 
@@ -75,6 +82,13 @@
 
             &:hover{
                 transform: scale(1.1);
+            }
+
+            @media(max-width:500px){
+                padding: 1rem 2rem;
+                
+                
+                
             }
         }
 

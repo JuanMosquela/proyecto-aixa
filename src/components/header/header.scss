@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 .header-container{    
-    height: 50px;
+    height: 60px;
     width: 100%; 
     
     background-color: #FFF;
@@ -9,70 +9,122 @@
 
     nav{        
         height: 100%; 
+        position: relative;
          
               
         ul{       
         
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
 
-        .navbar-list{
-            font-size: 1.8rem;
-            font-weight: 500;
-            color: #000;
-            cursor: pointer;
-            position: relative;
-           
+            .navbar-list{
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: #000;
+                cursor: pointer;
+                position: relative;
 
-            .arrow{
-                margin-left: 10px;
-            }
+                @media (max-width:500px){
+                    display: none;
+                }
+            
 
-            .services-list{
-                display: flex;
-                flex-direction: column;
-                align-items: center;                
-                text-align: center;
-                width: 100%;                
-                position: absolute;
-                top: 35px;
-                left: 0; 
-                z-index: 1000; 
+                .arrow{
+                    margin-left: 10px;
+                }
+
+                .services-list{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;                
+                    text-align: center;
+                    width: 100%;                
+                    position: absolute;
+                    top: 35px;
+                    left: 0; 
+                    z-index: 1000;              
+                                
+
+                    li{
+                        display: inline-block;
+                        width: 160px;                         
+                        font-size: 1.4rem;
+                        padding: 1rem 0;                    
+                        background-color: #FFF;                    
+                        border-bottom: 1px solid #333;                                       
+                        
+                        
+                        *{
+                            color: #000;
+                        }
+
+                        &:hover{
+                            background-color: var(--background-pink);
+                            border-radius: 5px;
+                        }
+                    }            
+                } 
                 
-                             
-
-                li{
-                    display: inline-block;
-                    width: 160px;                         
-                    font-size: 1.4rem;
-                    padding: 1rem 0;                    
-                    background-color: #FFF;                    
-                    border-bottom: 1px solid #333;             
-                                      
-                    
-                    
-                    *{
-                        color: #000;
-                    }
-
-                    &:hover{
-                        background-color: var(--background-pink);
-                        border-radius: 5px;
-                    }
-                }            
-            }        
+                
         }
-        .logo{
-            font-size: 3.4rem;
-            font-family: 'Prata', serif;
-            color: #000;           
-        }
+
+        
+        
 
         li{
             padding: .5rem 1rem;           
             
-        }        
+        } 
+
+        .logo{
+            font-size: 3.4rem;
+            font-family: 'Prata', serif;
+            color: #000;
+            
+            @media (max-width:500px){                
+                position: absolute;
+                left: 0;
+                top: 0;
+                
+            }
+        }
+
         
-    }}
+        
+        
+        
+    }
+    .lat-menu{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        font-size: 5rem;
+
+        @media (max-width:500px){
+            display: block;
+        }
+
+        .lat-menu-list{
+            background-color: #FFF;
+            width: 100vw;
+            height: 120px;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            z-index: 1200;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                font-size: 2rem;
+            }
+        }
+    }
+    
+  }
 }
