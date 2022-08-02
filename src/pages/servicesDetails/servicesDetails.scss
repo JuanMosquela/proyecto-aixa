@@ -27,17 +27,18 @@
     overflow-x: hidden;  
 
     .services-options{
-        min-height: 30vh;
+        min-height: 20vh;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         margin-left: 3rem;        
     
-        .service-grid{
-            display: grid;
-            max-width: 600px;
+        .service-row{
+            display: flex;
+            flex-wrap: wrap;
+            
             padding-right: 1rem;
-            grid-template-columns: 1fr 1fr;
+            
             justify-content: center;        
             gap: 2rem;
 

@@ -62,11 +62,10 @@ const ServicesDetails = () => {
       </figure>
       <section className='services'>
         <div className="services-options">
-          <ul className="service-grid">
+          <ul className="service-row">
             <li>Moda</li>
             <li>Gastronomia</li>
-            <li>Editorial</li>
-            <li>Comercial</li>
+            
           </ul>
         </div>
         <div className="photos-wrapper">
