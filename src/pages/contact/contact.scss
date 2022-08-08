@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    color: #36353A;
+    
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+        margin: 3rem 0;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin: 1rem 0;
+    }
+}
+
+.contactBanner {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+
+    img {
+        width: 25vw;
+        overflow: hidden;
+    }
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 16px;
+        margin: 1rem 0;
+    }
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0;
+
+    h2 {
+        margin-bottom: 5rem;
+    }
+
+    .inputRow {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.selectWrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+input, select {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #36353A;
+    padding: 2rem;
+    border: #36353A solid 3px;
+    border-radius: 3rem;
+    font-size: 16px;
+    width: 30vw;
+}
+
+.textareaWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    padding: 3rem;
+    border: #36353A solid 3px;
+    border-radius: 36px;
+    font-size: 16px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 2rem;
+    min-height: 30vh;
+}
+
+button{
+    width: 40%;
+    background-color: #98613A;
+    color: #FFF;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.5rem 4.5rem;
+    border-radius: 22.5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
