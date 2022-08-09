@@ -3,7 +3,7 @@
 .contact {
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;    
     align-items: center;
     color: #36353A;
     
@@ -48,6 +48,12 @@
     flex-direction: column;
     align-items: center;
     padding: 3rem 0;
+
+    @media (max-width:600px){
+        display: block;
+        width: 100%;
+        padding: 0 3%;
+    }
     
 
     h2 {
@@ -58,23 +64,26 @@
         display: flex;
         justify-content: center;
         gap: 2rem;
+        
+
+        @media (max-width:600px){
+            display: block;
+            width: 100%;
+        }
     }
 }
 
 .inputWrapper {
     display: flex;
     flex-direction: column;
-    min-height: 150px;
-    
-    
+    min-height: 150px;  
 
 }
 
 .selectWrapper {
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    padding-left: 2rem;
+    align-items: flex-start;    
 }
 
 label {
@@ -92,6 +101,11 @@ input, select {
     border-radius: 3rem;
     font-size: 16px;
     width: 30vw;
+
+    @media (max-width:600px){
+        display: block;
+        width: 100%;
+    }
 }
 
 .textareaWrapper {
@@ -125,6 +139,11 @@ button{
     margin: 2rem 0;
     cursor: pointer;
 
+    @media (max-width:600px){
+        display: block;
+        width: 100%;
+    }
+
     &:hover{
         transform: scale(1.1);
     }
@@ -135,6 +154,13 @@ button{
     color: rgb(48, 202, 48);
      font-weight: 600;
      margin-top: 10px;
+
+     @media (max-width:600px){
+        
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 }
 
 .error{

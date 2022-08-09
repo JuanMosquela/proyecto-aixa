@@ -17,6 +17,7 @@ const Header = () => {
   const handleClick = (li) => {
     console.log(li);
     navigate(`services/${li}`);
+    setMenu(false)
   };
 
   const services = [

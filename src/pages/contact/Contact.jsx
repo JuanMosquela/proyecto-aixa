@@ -23,7 +23,7 @@ const Contact = () => {
     
     setLoading(true)
     
-    emailjs.send("service_ijebytp", "template_sr0vrs4", object,"uOFt-AsEDNOS6pJPk" )    
+    emailjs.send("service_vgcjzto", "template_lcpoui8", object,"xYJ9QBuyTyzUwX_9E" )    
       .then((result) => {
         setTimeout(() => {
             
