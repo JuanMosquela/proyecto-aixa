@@ -98,13 +98,14 @@ input, select {
     color: #36353A;
     padding: 2rem;
     border: #36353A solid 3px;
-    border-radius: 3rem;
+    border-radius: 25px;
     font-size: 16px;
     width: 30vw;
 
     @media (max-width:600px){
         display: block;
         width: 100%;
+        padding: 1.5rem;
     }
 }
 
@@ -118,12 +119,12 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     padding: 3rem;
     border: #36353A solid 3px;
-    border-radius: 36px;
+    border-radius: 25px;
     font-size: 16px;
     width: 100%;
     resize: none;
     margin-bottom: 2rem;
-    min-height: 30vh;
+    
 }
 
 button{

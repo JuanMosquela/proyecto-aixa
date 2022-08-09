@@ -137,6 +137,7 @@ const Contact = () => {
             onChange={handleChange}
             onBlur={handleBlur} 
             name="message" 
+            rows='7'
             id="">
           </textarea>
           { touched.message && errors.message && <span className="error">{errors.message}</span>}

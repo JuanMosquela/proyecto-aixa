@@ -7,7 +7,7 @@
     align-items: center;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    min-height: 180vh;
+    
     color: #36353A;
     margin: 3rem 0;
 
@@ -49,6 +49,12 @@
         figure{
             width: 380px;
             height: 500px;
+
+            @media (max-width:500px){
+                width: 70%;
+                height: 300px;
+                margin-bottom: 2rem;
+            }
 
             img{
                 width: 100%;

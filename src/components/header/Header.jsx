@@ -10,50 +10,28 @@ import { useState } from "react";
 const Header = () => {
   const navigate = useNavigate();
 
-  const [menu, setMenu] = useState(false);
+  
 
   const [latMenu, setLatMenu] = useState(false);
 
-  const handleClick = (li) => {
-    console.log(li);
-    navigate(`services/${li}`);
-    setMenu(false)
+  const handleClick = (page) => { 
+    navigate(`/${page}`)    
+    setLatMenu(false)    
   };
-
-  const services = [
-    "Content creator",
-    "Product manager",
-    "Fotografa",
-    "Film maker",
-  ];
+  
 
   return (
     <header className="header-container">
       <nav>
         <ul>
-          <Link to="/services">
-            <li
-              className="navbar-list"
-              onMouseEnter={() => setMenu(true)}
-              onMouseLeave={() => setMenu(false)}
-            >
-              Servicios
-              {menu ? (
-                <MdOutlineKeyboardArrowUp className="arrow" />
-              ) : (
-                <MdOutlineKeyboardArrowDown className="arrow" />
-              )}
-              {menu && (
-                <ul className="services-list">
-                  {services.map((li) => (
-                    <li key={li} onClick={() => handleClick(li)}>
-                      {li}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          </Link>
+          <Link to='/services'>
+              <li
+                className="navbar-list"
+                onClick={() => handleClick}              
+              >
+                Servicios             
+              </li>
+          </Link>       
 
           <Link to="/">
             <li className="logo">Aixa Franzoni</li>
@@ -68,13 +46,9 @@ const Header = () => {
             onClick={() => setLatMenu(!latMenu)}
           />
           {latMenu && (
-            <ul className="lat-menu-list">
-              <Link to="/services">
-                <li>Servicios</li>
-              </Link>
-              <Link to="/contact">
-                <li>Contacto</li>
-              </Link>
+            <ul className="lat-menu-list">              
+              <li onClick={() => handleClick('services')}>Servicios</li>              
+              <li onClick={() => handleClick('contact')}>Contacto</li>              
             </ul>
           )}
         </div>
