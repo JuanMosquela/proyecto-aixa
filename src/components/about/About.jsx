@@ -6,8 +6,8 @@ const About = () => {
     <section className="about">
 
       <div className='container-row'>
-        <figure>
-          <img src="https://i.postimg.cc/qqwyk2th/espressoaixa.jpg" alt="" />
+        <figure className='container-profile'>
+          <img className='profile-picture' src="https://i.postimg.cc/NFXW1zDT/aixa-img.jpg" alt="" />
         </figure>
         <div className="sectionInfo">
           <h2>Sobre mí</h2>
