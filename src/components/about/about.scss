@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 .about {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,9 +18,11 @@
         flex-wrap: wrap;
         flex: 1 1 30rem;
         justify-content: space-evenly;
-        align-items: center;
+        
+        
+        
 
-        @media (max-width:500px){
+        @media (max-width:600px){
             flex-direction: column;
         }
 
@@ -32,7 +35,7 @@
             letter-spacing: 1px;
             line-height: 20px;
 
-            @media (max-width:500px){
+            @media (max-width:600px){
                 width: 100%;
             }
 
@@ -42,6 +45,11 @@
                 font-weight: 500;
                 padding-bottom: 1rem;
                 border-bottom: 2px solid #36353A;
+                padding-bottom: 20px;
+
+                @media (max-width:600px){
+                    font-size: 26px;
+                }
                
             }
 
@@ -54,15 +62,18 @@
         
 
         figure{
-            width: 380px;
-            height: 500px;
+            width: 360px;
+            height: 460px;
             background-color: var(--light-brown);
             position: relative;
+            
+            
 
-            @media (max-width:500px){
+            @media (max-width:600px){
                 width: 70%;
                 height: 300px;
-                margin-bottom: 2rem;
+                margin: 0 auto;
+                margin-bottom: 4rem;
             }
 
             img{
@@ -73,8 +84,14 @@
 
             .profile-picture{
                 position: absolute;
-                top: 25px;
-                left: 25px;
+                top: 20px;
+                left: 20px;
+
+
+                @media (max-width:500px){
+                    left: 15px;
+                    top: 15px;
+                }
             }
         }
 
