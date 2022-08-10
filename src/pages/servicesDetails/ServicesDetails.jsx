@@ -56,6 +56,7 @@ const ServicesDetails = () => {
 
   return (
     <>
+    {}
       <figure className="services-hero">
         <img src={allPhotos[0]} alt="" />
         <h2>{service.category}</h2>

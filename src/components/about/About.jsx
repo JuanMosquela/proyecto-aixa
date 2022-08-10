@@ -1,7 +1,22 @@
 import { Link } from 'react-router-dom';
-import './about.scss'
+import './about.scss';
+import dataServices from '../../data/dataServices';
+import { useEffect, useState } from 'react';
+import {MdOutlineArrowForwardIos} from 'react-icons/md'
+
 
 const About = () => {
+
+  const [services, setServices] = useState([])
+
+  useEffect(() => {
+
+    setServices(dataServices)
+    
+  }, [])
+  
+
+
   return (
     <section className="about">
 
@@ -17,16 +32,42 @@ const About = () => {
         </div>
       </div>
 
-      <div className='container-row'>
-        <div className="sectionInfo">
-          <h2>Servicios</h2>
-          <p>Ofrezco servicios profesionales de creación de contenido para redes, community manager, fotografía y video orientados a tu proyecto o emprendimiento.
-          </p>
-          <Link to="/services"><button>VER SERVICIOS</button></Link>
+      <div className='servicesWrapper'>
+        <div className='left-row'>
+          <div className="sectionInfo">
+            <h2>Servicios</h2>
+            <p>Ofrezco servicios profesionales de creación de contenido para redes, community manager, fotografía y video orientados a tu proyecto o emprendimiento.
+            </p>          
+          </div>
+          <div className="service-grid">
+          {
+            services.map(service => (
+
+              <div className="service">
+                <div className="service-icon">
+                  <i className='icon'>{service.icon}</i>
+                </div>
+                <div className="service-content">
+                  <h3>{service.title}</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore voluptatem dolorem sunt eos. Nulla error culpa necessitatibus beatae quisquam?</p>
+
+                </div>
+                <div className='container-arrow'>
+                  <i className='arrow'><MdOutlineArrowForwardIos /></i>
+
+                </div>
+                
+              </div>
+              
+            ))
+
+          }
+          </div>
         </div>
         <figure>
-          <img src="https://i.postimg.cc/qqwyk2th/espressoaixa.jpg" alt="" />
+        <img src="https://i.postimg.cc/D0PhynV3/IMG-1835-1.jpg" alt="" />
         </figure>
+        
       </div>
     </section>
   )
