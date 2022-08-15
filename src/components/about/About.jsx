@@ -41,9 +41,9 @@ const About = () => {
           </div>
           <div className="service-grid">
           {
-            services.map(service => (
+            services.map((service, index) => (
 
-              <div className="service">
+              <div key={index} className="service">
                 <div className="service-icon">
                   <i className='icon'>{service.icon}</i>
                 </div>

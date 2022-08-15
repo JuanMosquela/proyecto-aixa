@@ -1,17 +1,15 @@
 import "./contact.scss";
 import { useFormik } from "formik";
 import * as yup from 'yup';
-import emailjs, {send} from 'emailjs-com';
-import { useState } from "react";
+import emailjs from 'emailjs-com';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Contact = () => {
-
-  const [loading, setLoading] = useState(false)
-
-  const [form, setForm] = useState(false)
+  
 
   const basicSchemas = yup.object().shape({
-   
+    service: yup.string().required("Indica un servicio"),   
     firstName: yup.string().min(2, 'Mensaje muy corto!').max(50, 'Mensaje muy largo!').required('Este campo es requerido'),
     lastName: yup.string().min(2, 'Mensaje muy corto!').max(50, 'Mensaje muy largo!').required('Este campo es requerido'),        
     email: yup.string().email('Debes ingresar un email valido').required('Este campo es requerido'),
@@ -19,36 +17,46 @@ const Contact = () => {
     message: yup.string().min(2, 'Mensaje muy corto!').max(100, 'Mensaje muy largo!').required('Este campo es requerido')
   })
 
-  const SendEmail = (object) => {
+  const SendEmail = (object) => {   
     
-    setLoading(true)
-    
-    emailjs.send("service_vgcjzto", "template_lcpoui8", object,"xYJ9QBuyTyzUwX_9E" )    
+     let promise = emailjs.send("service_vgcjzto", "template_lcpoui8", object,"xYJ9QBuyTyzUwX_9E" )    
       .then((result) => {
-        setTimeout(() => {
-            
-          setLoading(false)
+        setTimeout(() => {            
+          
           resetForm()
-          setForm(true)
+          
                     
             
         }, 3000);
       }, (error) => {
             console.log(error.text)
-  })
+      })
+      toast.promise(promise, {
+        loading: 'Enviando...',
+        success:'Mensaje enviado',
+        error: 'Error'
+      },
+      {
+        style:{              
+          backgroundColor:'#FFF',
+          padding:'5px 15px',
+          boxShadow: '1px 5px 15px rgba(0,0,0,.2)' }
+        }
+      )
  }
 
   const { values, errors, touched,  handleSubmit, handleChange, handleBlur,  resetForm} = useFormik({
     initialValues:{
+      service: '',
       firstName: '',
       lastName:'',
       email:'',
       phone:'',
       message:''
     },
-    onSubmit: (values) => {
-      setLoading(true)
-      SendEmail(values)     
+    onSubmit: (values) => {      
+      SendEmail(values)   
+      
        
     },  
     validationSchema: basicSchemas
@@ -77,8 +85,17 @@ const Contact = () => {
         <h2>Formulario</h2>
 
         <div className="selectWrapper">
-          <select name="servicios" id="servicios">
-            <option value="servicios" defaultChecked>Servicios</option>
+          <label htmlFor="servicios">Servicios</label>
+          <select 
+            name="service"
+            id="servicios"
+            value={values.color}
+            onChange={handleChange}
+            onBlur={handleBlur}>
+              <option value="Product Manager" defaultChecked>Product Manager</option>
+              <option value="Content Creator" defaultChecked>Content Creator</option>
+              <option value="Fotografia" defaultChecked>Fotografia</option>
+              <option value="Film Maker" defaultChecked>Film Maker</option>
           </select>
         </div>
 
@@ -144,7 +161,32 @@ const Contact = () => {
         </div>
 
         <button type="submit">Enviar</button>
-        {form ? <span className="success">Mensaje enviado exitosamente</span> : null}
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+          gutter={8}
+          containerClassName=""
+          containerStyle={{}}
+          toastOptions={{            
+            
+            duration: 5000,
+            style: {
+              background: '#f5f5f5',
+              color: '#333',
+              fontSize:'1.8rem',
+              minWidth:'200px'
+            },
+            
+            success: {
+              duration: 3000,
+              theme: {
+                primary: 'green',
+                secondary: 'black',
+              },
+            },
+          }}
+        />
+        
       </form>
       
     </div>

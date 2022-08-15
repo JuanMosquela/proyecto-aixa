@@ -73,18 +73,14 @@
     }
 }
 
-.inputWrapper {
+.inputWrapper, .selectWrapper {
     display: flex;
     flex-direction: column;
     min-height: 150px;  
 
 }
 
-.selectWrapper {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;    
-}
+
 
 label {
     font-size: 18px;
@@ -137,12 +133,12 @@ button{
     border-radius: 22.5px;
     font-size: 18px;
     text-transform: uppercase;
-    margin: 2rem 0;
+    margin: 2rem auto;
     cursor: pointer;
 
     @media (max-width:600px){
         display: block;
-        width: 100%;
+        width: 90%;
     }
 
     &:hover{
@@ -150,24 +146,11 @@ button{
     }
 }
 
-.success{
-    font-size: 1.5rem;
-    color: rgb(48, 202, 48);
-     font-weight: 600;
-     margin-top: 10px;
-
-     @media (max-width:600px){
-        
-        display: block;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-}
 
 .error{
    
-    font-size: 1.5rem;
-    color: red;
+    font-size: 1.6rem;
+    color: rgb(207, 53, 53);
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 15px;
 }
