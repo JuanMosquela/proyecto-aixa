@@ -43,7 +43,8 @@ const About = () => {
           {
             services.map((service, index) => (
 
-              <div key={index} className="service">
+              <Link key={index} to={`/services/${service.category}`} style={{ color:'#333' }}>
+                <div  className="service">
                 <div className="service-icon">
                   <i className='icon'>{service.icon}</i>
                 </div>
@@ -58,6 +59,9 @@ const About = () => {
                 </div>
                 
               </div>
+              </Link>
+
+              
               
             ))
 
