@@ -13,7 +13,7 @@ const Services = () => {
 
   return (
     <section>
-      {servicesData.map(el => (
+      {servicesData.map(el => el.serviceMenu ? (
         <div key={el.category} className="service-container">
           <figure>
             <img src={el.picture_URL[0]} alt={el.title} />
@@ -26,7 +26,7 @@ const Services = () => {
             </Link>
           </div>
         </div>
-      ))}
+      ) : null )}
     </section>
   )
 }

@@ -4,6 +4,7 @@ import dataServices from "../../data/dataServices"
 import './servicesDetails.scss'
 import {TiDelete} from 'react-icons/ti'
 import {BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill} from 'react-icons/bs'
+import CommunityManager from "../communityManager/CommunityManager"
 
 const ServicesDetails = () => {
 
@@ -49,24 +50,36 @@ const ServicesDetails = () => {
     setSlideNumber(newSlideNumber)
   }
 
- 
+  const filterPhotos = (subCategory) => {
+    
+    const photosCategory = dataServices.find(service => {
+      return service.subCategory === subCategory
+    })
+
+    setAllPhotos(photosCategory.picture_URL) 
+
+  }
   
   
 
 
   return (
     <>
-    {}
+
       <figure className="services-hero">
         <img src={allPhotos[0]} alt="" />
         <h2>{service.category}</h2>
       </figure>
+
+    { service.category === 'Community manager' ? 
+      <CommunityManager />
+    : 
       <section className='services'>
         <div className="services-options">
           <ul className="service-row">
-            <li>Moda</li>
-            <li>Gastronomia</li>
-            
+            <li onClick={() => filterPhotos("editorial")}>Editorial</li>
+            <li>Comercial</li>
+            <li onClick={() => filterPhotos("gastronomia")}>Gastronomia</li>
           </ul>
         </div>
         <div className="photos-wrapper">
@@ -79,11 +92,10 @@ const ServicesDetails = () => {
                 src={photo} 
                 alt="" />
               </figure>
-                
-
             ))}
           </div>
         </div>
+      
         {
             modal && (
               <div className="photo-wrapper">
@@ -101,7 +113,7 @@ const ServicesDetails = () => {
           }
         
       </section>
-      
+    }
     </>
   )
 }
