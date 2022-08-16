@@ -45,20 +45,20 @@ const About = () => {
 
               <Link key={index} to={`/services/${service.category}`} style={{ color:'#333' }}>
                 <div  className="service">
-                <div className="service-icon">
-                  <i className='icon'>{service.icon}</i>
-                </div>
-                <div className="service-content">
-                  <h3>{service.title}</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore voluptatem dolorem sunt eos. Nulla error culpa necessitatibus beatae quisquam?</p>
+                  <div className="service-icon">
+                    <i className='icon'>{service.icon}</i>
+                  </div>
+                  <div className="service-content">
+                    <h3>{service.title}</h3>
+                    <p>{service.subtitle}</p>
 
-                </div>
-                <div className='container-arrow'>
-                  <i className='arrow'><MdOutlineArrowForwardIos /></i>
+                  </div>
+                  <div className='container-arrow'>
+                    <i className='arrow'><MdOutlineArrowForwardIos /></i>
 
+                  </div>
+                  
                 </div>
-                
-              </div>
               </Link>
 
               

@@ -194,7 +194,7 @@ const CommunityManager = () => {
       </section>
 
       <section className="beforeAfter">
-        <div>
+        <figure>
           <img
             src="https://i.postimg.cc/j2RQgZk6/3.png"
             alt=""
@@ -205,7 +205,7 @@ const CommunityManager = () => {
             alt=""
             className="screenshot"
           />
-        </div>
+        </figure>
         <span>
           <b>Antes y después</b> feed de <b>Ribera Zárate</b>
         </span>

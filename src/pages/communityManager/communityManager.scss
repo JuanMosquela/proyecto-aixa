@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
-    color: #36353A;
+    
 
     h3 {
         font-weight: 700;
@@ -44,6 +44,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #36353A;
 
             img {
                 height: 2rem;
@@ -75,6 +76,10 @@
 
             li {
                 margin: 0 1rem;
+
+                img{
+                    height: 400px;
+                }
             }
         }
 
@@ -82,30 +87,35 @@
 }
 
 .screenshot{
-    height: 650px;
+    height: 550px;
+   
 }
 
 .cmResults {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-center;
     align-items: center;
+   
 
     .compareContainer {
-        display: flex;
-        flex-direction: row;
+        display: flex;        
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
 
     .compareStats {
-        display: flex;
+        display: flex; 
+        flex: 1 1 30rem;       
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width: 40%;
+        align-items: center;        
         font-size: 1.5rem;
         font-weight: 500;
+
+        
+       
 
         span {
             width: 100%;
@@ -114,7 +124,7 @@
 
         .reach {
             font-size: 2rem;
-            margin: 3rem;
+            
         }
 
         .postStats {
@@ -132,6 +142,7 @@
 
                 img {
                     height: 30px;
+                    
                 }
             }
         }
@@ -163,11 +174,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
     align-items: center;
     margin: 4rem 0;
 
-    div {
+    figure {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         align-items: center;

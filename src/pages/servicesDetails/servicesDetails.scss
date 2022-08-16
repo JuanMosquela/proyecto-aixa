@@ -124,6 +124,7 @@
         right: 0;
         bottom: 0;
         inset: 0;
+        color: rgb(187, 177, 177);
 
         figure{
             position: relative;
@@ -149,7 +150,8 @@
             top: -20px;
             right: -50px;
             cursor: pointer;
-            color: rgb(187, 177, 177);
+            
+            
             font-size: 4rem;  
 
             @media (max-width:500px){
@@ -160,7 +162,7 @@
 
         .arrow-right{
             position: absolute;
-            color: rgb(187, 177, 177);
+            
             font-size: 3rem;
             right: -50px;
             top: 50%;
@@ -173,7 +175,7 @@
 
         .arrow-left{
             position: absolute;
-            color: rgb(187, 177, 177);
+            
             font-size: 3rem;
             left: -50px;
             top: 50%;

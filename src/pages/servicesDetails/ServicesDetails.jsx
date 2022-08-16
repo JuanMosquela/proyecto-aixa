@@ -78,7 +78,7 @@ const ServicesDetails = () => {
         <div className="services-options">
           <ul className="service-row">
             <li onClick={() => filterPhotos("editorial")}>Editorial</li>
-            <li>Comercial</li>
+            <li onClick={() => filterPhotos("comercial")}>Comercial</li>
             <li onClick={() => filterPhotos("gastronomia")}>Gastronomia</li>
           </ul>
         </div>
