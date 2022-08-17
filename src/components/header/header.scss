@@ -99,9 +99,9 @@
     .lat-menu{
         display: none;
         position: absolute;
-        right: 0;
+        right: 10px;
         top: 10px;
-        font-size: 4rem;
+        font-size: 3.2rem;
 
         @media (max-width:500px){
             display: block;

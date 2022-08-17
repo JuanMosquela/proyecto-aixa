@@ -1,6 +1,34 @@
+
+
+import SimpleSlider from '../../components/slider/SimpleSlider';
+
+
 import "./communityManager.scss";
 
+
+
 const CommunityManager = () => {
+
+  const fortuna = [
+    'https://i.postimg.cc/HkGJzgt1/fortuna1.png',
+    'https://i.postimg.cc/bvgsq2fq/fortuna2.png',
+    "https://i.postimg.cc/9QGDNnxR/fortuna3.png",
+    "https://i.postimg.cc/Zq4Wkxgf/fortuna4.png"    
+
+  ]
+
+   const ribera = [
+    "https://i.postimg.cc/qqbYQXFD/ribera1.png",
+    "https://i.postimg.cc/zXQ6g7KV/ribera2.png",
+    "https://i.postimg.cc/BZMdq4v5/ribera3.png",
+    "https://i.postimg.cc/VLv2vpSx/ribera4.png"
+
+
+   ]
+
+  
+
+
   return (
     <>
       <section className="cmFeatures">
@@ -48,20 +76,11 @@ const CommunityManager = () => {
             alt=""
             className="clientLogo"
           />
-          <ul>
-            <li>
-              <img src="https://i.postimg.cc/HkGJzgt1/fortuna1.png" alt="" />
-            </li>
-            <li>
-              <img src="https://i.postimg.cc/bvgsq2fq/fortuna2.png" alt="" />
-            </li>
-            <li>
-              <img src="https://i.postimg.cc/9QGDNnxR/fortuna3.png" alt="" />
-            </li>
-            <li>
-              <img src="https://i.postimg.cc/Zq4Wkxgf/fortuna4.png" alt="" />
-            </li>
-          </ul>
+          <SimpleSlider photos={fortuna} />
+
+          
+          
+          
         </div>
 
         <div className="client">
@@ -71,20 +90,7 @@ const CommunityManager = () => {
             className="clientLogo"
           />
           <h4>RIBERA ZÁRATE</h4>
-          <ul>
-            <li>
-              <img src="https://i.postimg.cc/qqbYQXFD/ribera1.png" alt="" />
-            </li>
-            <li>
-              <img src="https://i.postimg.cc/zXQ6g7KV/ribera2.png" alt="" />
-            </li>
-            <li>
-              <img src="https://i.postimg.cc/BZMdq4v5/ribera3.png" alt="" />
-            </li>
-            <li>
-              <img src="https://i.postimg.cc/VLv2vpSx/ribera4.png" alt="" />
-            </li>
-          </ul>
+           <SimpleSlider photos={ribera} />
         </div>
       </section>
 
