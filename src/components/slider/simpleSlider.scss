@@ -1,12 +1,14 @@
 .slider-container{
     display: block;
     width: 100%;
-    background-color: aqua;
+    margin-bottom: 2rem;
+    
     
 
     img{
         
         height: 400px;
+        padding: 0 10px;
         object-fit: cover;
         
     }

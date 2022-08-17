@@ -14,6 +14,9 @@ const SimpleSlider = ({photos}) => {
         slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
         responsive: [
           {
             breakpoint: 1024,

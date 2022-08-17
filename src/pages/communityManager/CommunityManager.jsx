@@ -33,7 +33,7 @@ const CommunityManager = () => {
     <>
       <section className="cmFeatures">
         <h3>INCLUYE</h3>
-        <div className="underline"></div>
+        
 
         <ul>
           <li>
@@ -68,7 +68,7 @@ const CommunityManager = () => {
 
       <section className="cmPhotos">
         <h3>FOTOS</h3>
-        <div className="underline"></div>
+        
 
         <div className="client">
           <img

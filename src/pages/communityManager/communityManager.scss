@@ -8,22 +8,25 @@
         font-weight: 700;
         font-size: 28px;
         margin: 2rem 0;
+        display: inline-block;
+        border-bottom: #36353A 3px solid;
+        width: 220px;
+        text-align: center;
+        padding-bottom: 15px;
     }
 
     h4 {
         font-weight: 500;
         font-size: 34px;
         color: #36353A;
+        
         margin-bottom: 2rem;
+        
+       
     }
 }
 
-.underline {
-    background-color: #36353A;
-    height: 3px;
-    width: 210px;
-    margin-bottom: 4rem;
-}
+
 
 .cmFeatures {
     display: flex;
@@ -55,13 +58,15 @@
 }
 
 .clientLogo {
-    height: 120px;
+    height: 100px;
+    
     
     
 }
 
 h4{
     font-size: 2rem;
+    
 }
 
 .cmPhotos {
