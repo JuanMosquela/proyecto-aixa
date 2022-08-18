@@ -13,8 +13,8 @@ const CommunityManager = () => {
     'https://i.postimg.cc/HkGJzgt1/fortuna1.png',
     'https://i.postimg.cc/bvgsq2fq/fortuna2.png',
     "https://i.postimg.cc/9QGDNnxR/fortuna3.png",
-    "https://i.postimg.cc/Zq4Wkxgf/fortuna4.png"    
-
+    "https://i.postimg.cc/Zq4Wkxgf/fortuna4.png",
+    
   ]
 
    const ribera = [
@@ -32,8 +32,8 @@ const CommunityManager = () => {
   return (
     <>
       <section className="cmFeatures">
-        <h3>INCLUYE</h3>
-        
+        <h3 className='community-title'>INCLUYE</h3>
+        <div className="underline"></div>
 
         <ul>
           <li>
@@ -67,8 +67,8 @@ const CommunityManager = () => {
       </section>
 
       <section className="cmPhotos">
-        <h3>FOTOS</h3>
-        
+        <h3 className='community-title'>FOTOS</h3>
+        <div className="underline"></div>
 
         <div className="client">
           <img
@@ -95,7 +95,7 @@ const CommunityManager = () => {
       </section>
 
       <section className="cmResults">
-        <h3>LOGROS EN INSTAGRAM</h3>
+        <h3 className='community-title'>LOGROS EN INSTAGRAM</h3>
         <div className="underline"></div>
 
         <div className="compareContainer">
