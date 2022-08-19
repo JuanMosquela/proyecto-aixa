@@ -75,11 +75,9 @@ const dataServices = [
         "https://i.postimg.cc/x8JtWjCn/IMG-2368.jpg",
         "https://i.postimg.cc/FFw4170b/IMG-2372.jpg",
         "https://i.postimg.cc/TYmXbfcz/IMG-2382.jpg",
-        "https://i.postimg.cc/fbDqJhHf/IMG-2390.jpg",
+       
         "https://i.postimg.cc/6pXxLgjy/IMG-2393.jpg",
-        "https://i.postimg.cc/R0PrmFMH/IMG-2396.jpg",
-        "https://i.postimg.cc/5yCD8S8B/IMG-2403-2.jpg",
-        "https://i.postimg.cc/pTywLHT1/IMG-2419-144-copia.jpg],"],
+        "https://i.postimg.cc/R0PrmFMH/IMG-2396.jpg"],
         category:'Fotografa',
         subCategory:'comercial',
         icon: <MdPhotoCamera />

@@ -4,7 +4,8 @@ import dataServices from "../../data/dataServices"
 import './servicesDetails.scss'
 import {TiDelete} from 'react-icons/ti'
 import {BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill} from 'react-icons/bs'
-import CommunityManager from "../communityManager/CommunityManager"
+import CommunityManager from "../communityManager/CommunityManager";
+
 
 const ServicesDetails = () => {
 
@@ -60,7 +61,6 @@ const ServicesDetails = () => {
 
   }
   
-  
 
 
   return (
@@ -70,31 +70,40 @@ const ServicesDetails = () => {
         <img src={allPhotos[0]} alt="" />
         <h2>{service.category}</h2>
       </figure>
+      
 
     { service.category === 'Community manager' ? 
       <CommunityManager />
     : 
       <section className='services'>
-        <div className="services-options">
-          <ul className="service-row">
-            <li onClick={() => filterPhotos("editorial")}>Editorial</li>
-            <li onClick={() => filterPhotos("comercial")}>Comercial</li>
-            <li onClick={() => filterPhotos("gastronomia")}>Gastronomia</li>
-          </ul>
-        </div>
-        <div className="photos-wrapper">
-          <h3>Fleur</h3>
-          <div className="container-photos">
-            {allPhotos.map((photo, index) => (
-              <figure key={photo} >
-                <img
-                onClick={() => handleOpen(index)}                 
-                src={photo} 
-                alt="" />
-              </figure>
-            ))}
+        
+        {
+          service.category === 'Film maker' ? (
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/595543165?h=b7052375a7" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+          ) : (
+            <div className="photos-wrapper">
+              <div className="services-options">
+                
+                  <button onClick={() => filterPhotos("editorial")}>Editorial</button>
+                  <button onClick={() => filterPhotos("comercial")}>Comercial</button>
+                  <button onClick={() => filterPhotos("gastronomia")}>Gastronomia</button>
+                
+              </div>
+            <h3>Fleur</h3>
+            <div className="container-photos">
+              {allPhotos.map((photo, index) => (
+                <figure key={photo} >
+                  <img
+                  onClick={() => handleOpen(index)}                 
+                  src={photo} 
+                  alt="" />
+                </figure>
+              ))}
+            </div>
           </div>
-        </div>
+          )
+        }
       
         {
             modal && (
@@ -114,6 +123,7 @@ const ServicesDetails = () => {
         
       </section>
     }
+    
     </>
   )
 }

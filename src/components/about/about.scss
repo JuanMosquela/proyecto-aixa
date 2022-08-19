@@ -12,6 +12,8 @@
     color: #36353A;
     margin: 3rem 0;
 
+    
+
     .container-row {
         display: flex;
         width: 100%;
@@ -20,6 +22,10 @@
         justify-content: space-evenly;
         margin-bottom: 5rem;
         
+
+        .container-profile{
+            margin-bottom: 3rem;
+        }
         
         
 
@@ -68,6 +74,7 @@
             height: 460px;
             background-color: var(--light-brown);
             position: relative;
+            margin-bottom: 4rem;
             
             
 
@@ -75,7 +82,7 @@
                 width: 70%;
                 height: 300px;
                 margin: 0 auto;
-                margin-bottom: 4rem;
+                
             }
 
             img{
@@ -182,6 +189,8 @@
                 }
                 
             }
+
+            
 
             
         }
