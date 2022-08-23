@@ -1,7 +1,11 @@
 .services-hero{
     height: 60vh;   
     position: relative;
-    display: flex;    
+    display: flex;   
+
+    @media(max-width:500px){
+        min-height: 20vh;
+    } 
 
     img{
         width: 100%;
@@ -29,15 +33,18 @@
     .services-options{
         min-height: 20vh;
         display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;      
         align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;      
+        
+       
         
         
         
         @media (max-width:500px){
             min-height: 30vh;
             margin: 0;
+            gap: 1rem;
         }      
 
             
@@ -45,6 +52,7 @@
     
             button{
                 max-width: 300px;
+                height: 50px;
                 border-radius: 25px;
                 border: 1px solid var(--light-brown);
                 font-size: 2rem;

@@ -4,6 +4,7 @@
     height: 60px;
     width: 100%; 
     
+    
     background-color: #FFF;
     z-index: 1000;    
 
@@ -53,7 +54,7 @@
                         font-size: 1.4rem;
                         padding: 1rem 0;                    
                         background-color: #FFF;                    
-                        border-bottom: 1px solid #333;                                       
+                        border-bottom: 1px solid #333;              
                         
                         
                         *{
@@ -65,17 +66,12 @@
                             border-radius: 5px;
                         }
                     }            
-                } 
-                
-                
-        }
-
-        
+                }               
+        }       
         
 
         li{
-            padding: .5rem 1rem;           
-            
+            padding: .5rem 1rem;            
         } 
 
         .logo{
@@ -86,16 +82,11 @@
             @media (max-width:500px){                
                 position: absolute;
                 left: 0;
-                top: 0;
-                
+                top: 0;                
             }
-        }
-
-        
-        
-        
-        
+        }       
     }
+
     .lat-menu{
         display: none;
         position: absolute;

@@ -1,0 +1,16 @@
+.logos-wrapper{
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.logos-wrapper img{
+    width: 60px;
+    
+}
+
+.logos-wrapper img:nth-child(1), .logo-wrapper img:nth-child(5){
+    transform: scale(2.8);
+}

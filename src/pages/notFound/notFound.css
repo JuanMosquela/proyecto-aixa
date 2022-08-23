@@ -1,0 +1,14 @@
+.container-errorpage{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-wrapper{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.error-wrapper h2{
+    margin-bottom: 10px;
+}

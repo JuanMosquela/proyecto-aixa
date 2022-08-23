@@ -9,6 +9,7 @@
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     
+    
     color: #36353A;
     margin: 3rem 0;
 
@@ -20,7 +21,9 @@
         flex-wrap: wrap;
         flex: 1 1 30rem;
         justify-content: space-evenly;
+        align-items: center;
         margin-bottom: 5rem;
+        min-height: 90vh;
         
 
         .container-profile{

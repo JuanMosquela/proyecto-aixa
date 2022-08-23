@@ -76,9 +76,7 @@ const CommunityManager = () => {
             alt=""
             className="clientLogo"
           />
-          <SimpleSlider photos={fortuna} />
-
-          
+          <SimpleSlider photos={fortuna} />          
           
           
         </div>
