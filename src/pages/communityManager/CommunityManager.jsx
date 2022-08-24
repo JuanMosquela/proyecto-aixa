@@ -24,7 +24,15 @@ const CommunityManager = () => {
     "https://i.postimg.cc/VLv2vpSx/ribera4.png"
 
 
-   ]
+  ]
+
+  const menus = [
+    "https://i.postimg.cc/G23wWT5p/Menu-capriccio.png",
+    "https://i.postimg.cc/CL90R1zv/6.jpg",
+    "https://i.postimg.cc/MGmJ3mt4/7.jpg",
+    "https://i.postimg.cc/L51pDKWk/5.jpg"
+    
+  ]
 
   
 
@@ -89,6 +97,12 @@ const CommunityManager = () => {
           />
           <h4>RIBERA ZÁRATE</h4>
            <SimpleSlider photos={ribera} />
+        </div>
+
+        <div className="client">
+          <h4>Menus de Capriccio:</h4>         
+          
+          <SimpleSlider photos={menus} />
         </div>
       </section>
 
