@@ -2,6 +2,19 @@ import {MdPhotoCamera, MdSocialDistance} from 'react-icons/md'
 import {BiCameraMovie} from 'react-icons/bi'
 import {TiSocialYoutube} from 'react-icons/ti'
 
+
+
+export const logos = [
+    "https://i.postimg.cc/W39q4bfp/188.jpg",
+    "https://i.postimg.cc/2yVbLRPQ/189.jpg",
+    "https://i.postimg.cc/SR3XW1hw/190.jpg",
+    "https://i.postimg.cc/zXHHJNw5/191.jpg",
+    "https://i.postimg.cc/jSVw21vf/193.jpg",
+    "https://i.postimg.cc/Z5r9dLDM/195.jpg",
+    "https://i.postimg.cc/R0dNPZm1/196.jpg",
+
+]
+
 const dataServices = [
     {
         title: 'content creator',
@@ -46,8 +59,7 @@ const dataServices = [
             "https://i.postimg.cc/0ynvF34r/3.jpg",
             "https://i.postimg.cc/pXDRYyYf/2.jpg",
             "https://i.postimg.cc/xjN086XF/1.jpg",
-            "https://i.postimg.cc/gj3FDBRz/10.jpg",
-            
+            "https://i.postimg.cc/gj3FDBRz/10.jpg",            
             "https://i.postimg.cc/GmdrMrqZ/4.jpg",
             "https://i.postimg.cc/1zzSQBxB/5.jpg",
             "https://i.postimg.cc/MKkzQ1RZ/6.jpg",
@@ -120,7 +132,7 @@ const dataServices = [
         title: 'films',
         subtitle: 'construir audiovisuales',
         serviceMenu: true,
-        picture_URL:['https://i.postimg.cc/4N6Cfk1K/IMG-1995.jpg'],
+        
         category:'Film maker',
         icon: <BiCameraMovie />
     }

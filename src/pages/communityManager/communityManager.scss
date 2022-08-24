@@ -168,3 +168,29 @@ h4{
         margin: 3rem 0;
     }
 }
+
+.client{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+    
+    
+    .logos-row{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+    }
+}

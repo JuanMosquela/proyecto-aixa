@@ -1,5 +1,5 @@
 
-
+import {logos} from '../../data/dataServices'
 import SimpleSlider from '../../components/slider/SimpleSlider';
 
 
@@ -97,6 +97,16 @@ const CommunityManager = () => {
           />
           <h4>RIBERA ZÁRATE</h4>
            <SimpleSlider photos={ribera} />
+        </div>
+
+        <div className="client">
+          <h4>Instagram</h4>
+          <div className="logos-row">
+          {logos.map(logo => (
+            <img src={logo} alt="" />
+          ))}
+          </div>
+
         </div>
 
         <div className="client">

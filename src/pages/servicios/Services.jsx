@@ -1,19 +1,13 @@
-import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import dataServices from "../../data/dataServices"
 import './services.scss'
 
-const Services = () => {
-
-  const [servicesData, setServicesData] = useState(dataServices)
-
-  
-  
+const Services = () => { 
 
 
   return (
     <section>
-      {servicesData.map(el => el.serviceMenu ? (
+      {dataServices.map(el => el.serviceMenu ? (
         <div key={el.category} className="service-container">
           <figure>
             <img src={el.picture_URL[0]} alt={el.title} />

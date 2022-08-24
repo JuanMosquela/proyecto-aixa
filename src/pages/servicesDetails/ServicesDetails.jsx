@@ -80,21 +80,28 @@ const ServicesDetails = () => {
         {
           service.category === 'Film maker' ? (
             <div className="film-container">
-              <h2>Metamorfosis</h2>
-              <p>Metamorfosis es un corto que hice en pandemia con el fin de mostrar la evolucion que atravesamos todos al pasar por diferentes "evoluciones", por ejemplo cuando salimos de nuestra zona de confort y nos toca tener vivencias nuevas que nos hacen crecer. Es por eso que al final del corto se dice: 'y vos ya te encontraste'.</p>
-              <iframe title="vimeo-player" src="https://player.vimeo.com/video/595543165?h=b7052375a7" width="740" height="460" frameborder="0" allowfullscreen></iframe>
+              <div className="film-wrapper">
+                <h2>Metamorfosis</h2>
+                <p>Metamorfosis es un corto que hice en pandemia con el fin de mostrar la evolucion que atravesamos todos al pasar por diferentes "evoluciones", por ejemplo cuando salimos de nuestra zona de confort y nos toca tener vivencias nuevas que nos hacen crecer. Es por eso que al final del corto se dice: 'y vos ya te encontraste'.</p>
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/595543165?h=b7052375a7" width="740" height="460" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div className="film-wrapper">
+                <h2>Vamonos</h2>
+              <iframe width="560" height="415" src="https://www.youtube.com/embed/eC0do_UcjMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              
             </div>
 
           ) : (
             <div className="photos-wrapper">
-              <div className="services-options">
-                
-                  <button onClick={() => filterPhotos("editorial")}>Editorial</button>
-                  <button onClick={() => filterPhotos("comercial")}>Comercial</button>
-                  <button onClick={() => filterPhotos("gastronomia")}>Gastronomia</button>
-                
-              </div>
-            <h3>Fleur</h3>
+              {service.category === 'Content creator' && (
+                <div className="services-options">                
+                    <button onClick={() => filterPhotos("editorial")}>Editorial</button>
+                    <button onClick={() => filterPhotos("comercial")}>Comercial</button>
+                    <button onClick={() => filterPhotos("gastronomia")}>Gastronomia</button>                  
+                </div>
+                )}
+            {service.category === 'Content creator' && <h3>Fleur</h3>}
             <div className="container-photos">
               {allPhotos.map((photo, index) => (
                 <figure key={photo} >

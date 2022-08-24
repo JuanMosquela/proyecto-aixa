@@ -98,7 +98,8 @@
         .container-photos{
             display: grid;
             text-align: center;           
-            grid-template-columns:repeat(auto-fit,minmax(200px, 1fr)); 
+            grid-template-columns:repeat(auto-fit,minmax(200px, 1fr));
+            margin: 2rem 0; 
             gap: 1rem;                   
             
     
@@ -197,6 +198,10 @@
 
 .film-container{
     min-height: 100vh;
+}
+
+.film-wrapper{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,11 +224,10 @@
     }
 }
 
-iframe{
-   
-    
+iframe{   
    
     width: 100%;
+    margin-bottom: 2rem;
     
 }
 
