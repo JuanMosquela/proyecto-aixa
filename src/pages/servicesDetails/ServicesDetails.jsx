@@ -79,7 +79,11 @@ const ServicesDetails = () => {
         
         {
           service.category === 'Film maker' ? (
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/595543165?h=b7052375a7" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <div className="film-container">
+              <h2>Metamorfosis</h2>
+              <p>Metamorfosis es un corto que hice en pandemia con el fin de mostrar la evolucion que atravesamos todos al pasar por diferentes "evoluciones", por ejemplo cuando salimos de nuestra zona de confort y nos toca tener vivencias nuevas que nos hacen crecer. Es por eso que al final del corto se dice: 'y vos ya te encontraste'.</p>
+              <iframe title="vimeo-player" src="https://player.vimeo.com/video/595543165?h=b7052375a7" width="740" height="460" frameborder="0" allowfullscreen></iframe>
+            </div>
 
           ) : (
             <div className="photos-wrapper">
