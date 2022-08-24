@@ -102,8 +102,8 @@ const CommunityManager = () => {
         <div className="client">
           <h4>Instagram</h4>
           <div className="logos-row">
-          {logos.map(logo => (
-            <img src={logo} alt="" />
+          {logos.map((logo, index) => (
+            <img key={index} src={logo} alt="" />
           ))}
           </div>
 

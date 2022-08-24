@@ -181,6 +181,7 @@ h4{
     
     .logos-row{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         gap: 20px;
@@ -190,6 +191,11 @@ h4{
             height: 100px;
             object-fit: cover;
             border-radius: 50%;
+
+            @media(max-width:500px){
+                width: 60px;
+                height: 60px;
+            }
         }
 
     }
