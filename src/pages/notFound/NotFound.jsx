@@ -7,8 +7,11 @@ const NotFound = () => {
     <div className='container-errorpage'>
       <div className="error-wrapper">
         <img src={errorImg} alt="logo de pagina no encontrada" />
-        <h2>Lo sentimos:</h2>
-        <p>Intenta con una direccion diferente o regresa haciendo click <Link to='/'>aqui</Link></p>
+        <h2>Página no encontrada</h2>
+        <p>No podemos encontrar la página que estas buscando</p>
+        <Link to='/'>
+          <button>Volver</button>
+        </Link>
       </div>
     </div>
   )
