@@ -71,15 +71,7 @@ const Contact = () => {
         <img src="https://i.postimg.cc/cvzC4qP6/contact3.jpg" alt="" />
         <img src="https://i.postimg.cc/jLXJTFsJ/contact4.jpg" alt="" />
       </div>
-
-      <div className="contactInfo">
-        <h2>Contacto</h2>
-        <h3>Consultas generales/Enivar CV</h3>
-        <span>aixafranzoni@gmail.com</span>
-        <h3>Editorales/Comerciales</h3>
-        <span>aixafranzoni@gmail.com</span>
-        <span>011-5174-8813</span>
-      </div>
+      
 
       <form className="contactForm" onSubmit={handleSubmit}>
         <h2>Formulario</h2>
@@ -96,6 +88,7 @@ const Contact = () => {
               <option value="Content Creator" defaultChecked>Content Creator</option>
               <option value="Fotografia" defaultChecked>Fotografia</option>
               <option value="Film Maker" defaultChecked>Film Maker</option>
+              <option value="Quiero sumarme al equipo" defaultChecked>Quiero sumarme al equipo</option>
           </select>
         </div>
 
