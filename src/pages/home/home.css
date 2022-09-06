@@ -10,9 +10,25 @@
 
 .logos-wrapper img{
     width: 60px;
+
+    
     
 }
 
+
+
 .logos-wrapper img:nth-child(1), .logo-wrapper img:nth-child(5){
     transform: scale(2.8);
+}
+
+@media (max-width:500px){
+
+    .logos-wrapper{
+        padding: 4rem;
+    }
+
+
+    .logos-wrapper img{
+        width: 50px;
+    }
 }
