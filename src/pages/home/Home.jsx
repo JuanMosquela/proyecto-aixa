@@ -9,6 +9,8 @@ import sandra from '../../img/sandra.svg'
 import mym from '../../img/mym.svg'
 import './home.css'
 
+
+
 const logos = [
   sandra,
   
@@ -37,6 +39,8 @@ const Home = () => {
           ))
         }
       </figure>
+
+      
 
 
       

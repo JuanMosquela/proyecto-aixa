@@ -1,9 +1,11 @@
 .logos-wrapper{
     min-height: 40vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    gap: 5rem;
 }
 
 .logos-wrapper img{
