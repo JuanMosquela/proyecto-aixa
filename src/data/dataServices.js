@@ -1,6 +1,10 @@
 import {MdPhotoCamera, MdSocialDistance} from 'react-icons/md'
 import {BiCameraMovie} from 'react-icons/bi'
 import {TiSocialYoutube} from 'react-icons/ti'
+import cc from '../img/cc.jpg'
+import cm from '../img/community.jpg'
+import photo from '../img/photo.jpg'
+import film from '../img/film.jpg'
 
 export const logos = [
     "https://i.postimg.cc/W39q4bfp/188.jpg",
@@ -18,7 +22,7 @@ const dataServices = [
         subtitle: 'medios digitales',
         serviceMenu: true,
         picture_URL:[
-            "https://i.postimg.cc/8c5CcGrF/9b.jpg",
+            cc,
             "https://i.postimg.cc/KzHvVVRt/1.jpg",
             "https://i.postimg.cc/rmKtK54C/10.jpg",
             "https://i.postimg.cc/j5mnNCQV/11.jpg",
@@ -53,7 +57,7 @@ const dataServices = [
         subtitle: 'ampliar comunidades online',
         serviceMenu: true,
         picture_URL:[
-            "https://i.postimg.cc/0ynvF34r/3.jpg",
+            cm,
             "https://i.postimg.cc/pXDRYyYf/2.jpg",
             "https://i.postimg.cc/xjN086XF/1.jpg",
             "https://i.postimg.cc/gj3FDBRz/10.jpg",            
@@ -92,7 +96,7 @@ const dataServices = [
         subtitle: 'proyectar imagenes',
         serviceMenu: true,
         picture_URL:[
-        "https://i.postimg.cc/fyzMKFTc/2.jpg",
+        photo,
         "https://i.postimg.cc/tCm93B06/3.jpg",
         "https://i.postimg.cc/ZKqTv1QZ/agus.jpg",
         "https://i.postimg.cc/ZYwmmw5Q/IMG-1803.jpg",
